@@ -1,0 +1,358 @@
+lang="	p	y	t	h	o	n"
+	0+2	1	2+2	3	4	5
+
+p:3
+y:1
+t:1
+
+[start:end]
+
+[3:]
+
+[:3]
+
+[:]
+
+[::]
+
+[start:end:step]
+
+[	:	:2]
+
+
+
+http:	//	bridgelabz.com	/	admin
+
+/
+
+===============================================================
+
+List
+======
+- array in linux
+
+marks=10 20 30
+
+marks=[10,20,30]
+
+lang=['python']
+
+//homogenious 		same kind of data
+//heterogenious		different kind of data
+
+//it can store duplicate data
+
+data=[10,'java',10.56]
+
+append()===it used to add the data at the end of in existing list
+insert(index,value)===to add the data atr [particular index postiion
+remove()===to remove/delete a data from a list
+len()===to gee the klength of a lisyt
+sorted()==it used to sort the data in assentinf order, only wors for the homogenious
+count()===to ge the occurances of a element
+
+linux
+------
+marks=[10,20,30]
+marks[10]=100
+marks=[10,20,30,100]
+
+
+================================================================
+
+set
+===
+//homogenious 		same kind of data
+//heterogenious		different kind of data
+
+//it doesnt store duplicate data/values
+// it does not follow the insertion order
+
+list
+====
+lst=[10,20,30]
+print(lst) //10,20,30
+
+st={10,20,30}
+print(st)//30,20,10  or 10,20,30 or 20,10,30
+
+add()=== it used to store the data in a set
+union() or | ===to get the common and different values form 2 set as a result of one set
+insersection() or & ==to get only common values present inside the 2 diff sets
+difference() ===to gee the different value, which is not poresent in second set
+
+
+==================================================================================
+
+dictionary
+------------
+key-value pair data
+
+marks={10:100,11:90}
+
+- key should be unique
+- values can be duplicate
+//homogenious 		same kind of data
+//heterogenious		different kind of data
+
+------------------------------
+
+d1[10]=10
+d1[11]=105
+d1[13]=108
+
+keys()==to get only keys infor
+values()== to get only value information
+
+===================================
+
+variables
+---------
+mutable vari
+immutabble varibles
+
+
+
+
+
+
+
+
+
+
+Python 3.10.5 (tags/v3.10.5:f377153, Jun  6 2022, 16:14:13) [MSC v.1929 64 bit (AMD64)] on win32
+Type "help", "copyright", "credits" or "license" for more information.
+>>> lang="python"
+>>> lang[::1]
+'python'
+>>> lang[::2]
+'pto'
+>>> lang[::3]
+'ph'
+>>> lang[::1]
+'python'
+>>> lang[::-1]
+'nohtyp'
+>>> url="http://bridgelabz.com/admin"
+>>> split_lst=url.split("/")
+>>> split_lst
+['http:', '', 'bridgelabz.com', 'admin']
+>>> url="first-name"
+>>> split_lst=url.split("-")
+>>> split_lst
+['first', 'name']
+>>> marks=[10,20,30]
+>>> type(marks)
+<class 'list'>
+>>> lang=['python','java']
+>>> type(lang)
+<class 'list'>
+>>> marks=[10.2,20.2,30.5]
+>>> type(marks)
+<class 'list'>
+>>> data=[10,'piyush',10.5]
+>>> type(data)
+<class 'list'>
+>>> data[0]
+10
+>>> data[1]
+'piyush'
+>>> data[2]
+10.5
+>>> data[3]
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+IndexError: list index out of range
+>>> data.append(100)
+>>> data
+[10, 'piyush', 10.5, 100]
+>>> data.inser(1,'java')
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+AttributeError: 'list' object has no attribute 'inser'. Did you mean: 'insert'?
+>>> data.insert(1,'java')
+>>> data
+[10, 'java', 'piyush', 10.5, 100]
+>>> data.insert(0,'java')
+>>> data
+['java', 10, 'java', 'piyush', 10.5, 100]
+>>> data.remove(10.5)
+>>> data
+['java', 10, 'java', 'piyush', 100]
+>>> data.remove('java')
+>>> data
+[10, 'java', 'piyush', 100]
+>>> len(data)
+4
+>>> sort(data)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'sort' is not defined. Did you mean: 'sorted'?
+>>> data=[40,50,20,10]
+>>> sort(data)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'sort' is not defined. Did you mean: 'sorted'?
+>>> sorted(data)
+[10, 20, 40, 50]
+>>> data=[40,'java',10.5]
+>>> sorted(data)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: '<' not supported between instances of 'str' and 'int'
+>>> data=['java','python','c']
+>>> sorted(data)
+['c', 'java', 'python']
+>>> data.count('c')
+1
+>>> data.count('python')
+1
+>>> data=['java','python','c','c','java','c']
+>>> data.count('c')
+3
+>>> data.count('python')
+1
+>>> name='piyush'
+>>> name*3
+'piyushpiyushpiyush'
+>>> data*3
+['java', 'python', 'c', 'c', 'java', 'c', 'java', 'python', 'c', 'c', 'java', 'c', 'java', 'python', 'c', 'c', 'java', 'c']
+>>> data=[10]
+>>> id(data)
+1965226338816
+>>> data.append(20)
+>>> data
+[10, 20]
+>>> id(data)
+1965226338816
+>>> set={10,20}
+>>> id(set)
+1965230494144
+>>> set.add('python')
+>>> id(set)
+1965230494144
+>>>
+>>>
+>>> data=[10,50,30]
+>>> data.sort()
+>>> d=data.sort()
+>>> d
+>>>
+>>> d
+>>> print(data.sort())
+None
+>>> data=[10,50,60,20]
+>>> print(data.sort())
+None
+>>> print(sorted(data))
+[10, 20, 50, 60]
+>>> data.sort
+<built-in method sort of list object at 0x000001C9909E2A00>
+>>> d=data.sort
+>>> d
+<built-in method sort of list object at 0x000001C9909E2A00>
+>>> data.sort()
+>>> marks={10,20,30}
+>>> type(marks)
+<class 'set'>
+>>> marks={10,20.5,30,'python'}
+>>> type(marks)
+<class 'set'>
+>>> marks={10,20.5,30,'python'}
+>>> marks
+{'python', 10, 20.5, 30}
+>>> lst=[10,20,30]
+>>> lst
+[10, 20, 30]
+>>> marks={10,20.5,30,'python','python'}
+>>> marks
+{'python', 10, 20.5, 30}
+>>> marks={10,20.5,30,'python','python',10}
+>>> marks
+{'python', 10, 20.5, 30}
+>>> marks.add(100.50)
+>>> marks
+{100.5, 10, 'python', 20.5, 30}
+>>> marks.add('java')
+>>> marks
+{100.5, 10, 'java', 'python', 20.5, 30}
+>>> marks.inser(0,45)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+AttributeError: 'set' object has no attribute 'inser'
+>>> marks.insert(0,45)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+AttributeError: 'set' object has no attribute 'insert'
+>>> set_a={10,20,'java'}
+>>> set_b={10,'python',100}
+>>> set_a.union(set_b)
+{'python', 20, 100, 10, 'java'}
+>>> set_a.union(set_b)
+{'python', 20, 100, 10, 'java'}
+>>> set_a.intersection(set_b)
+{10}
+>>> set_a.difference(set_b)
+{20, 'java'}
+>>> set_b.difference(set_a)
+{'python', 100}
+>>> set_a/set_b
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: unsupported operand type(s) for /: 'set' and 'set'
+>>> set_c=set_a/set_b
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: unsupported operand type(s) for /: 'set' and 'set'
+>>> set_a|set_b
+{'python', 20, 100, 10, 'java'}
+>>> set_a&set_b
+{10}
+>>> d1={1:100,2:95,3:45}
+>>> type(d1)
+<class 'dict'>
+>>> d1
+{1: 100, 2: 95, 3: 45}
+>>> d1[10]=100
+>>> d1[11]=58
+>>> type(d1)
+<class 'dict'>
+>>> d1
+{1: 100, 2: 95, 3: 45, 10: 100, 11: 58}
+>>> new_d[10]=45
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'new_d' is not defined
+>>> new_d={}
+>>> new_d[10]=100
+>>> new_d[11]=85
+>>> new_d
+{10: 100, 11: 85}
+>>> m1={1:100,2:'java'}
+>>> m1
+{1: 100, 2: 'java'}
+>>> m1={1:100,2:'java',3:[10,20,30],4:{10.20.3}}
+  File "<stdin>", line 1
+    m1={1:100,2:'java',3:[10,20,30],4:{10.20.3}}
+                                     ^
+SyntaxError: expression expected after dictionary key and ':'
+>>> m1={1:100,2:'java',3:[10,20,30],4:{10,20.3}}
+>>> m1
+{1: 100, 2: 'java', 3: [10, 20, 30], 4: {10, 20.3}}
+>>> dict_d={1:{1:'java',2:'python'}}
+>>> dict_d
+{1: {1: 'java', 2: 'python'}}
+>>> m1.keys()
+dict_keys([1, 2, 3, 4])
+>>> m1.values()
+dict_values([100, 'java', [10, 20, 30], {10, 20.3}])
+>>> flag=true
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'true' is not defined. Did you mean: 'True'?
+>>> flag=True
+>>> type(flag)
+<class 'bool'>
+>>> flag=False
+>>> type(flag)
+<class 'bool'>
